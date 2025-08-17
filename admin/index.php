@@ -2,10 +2,12 @@
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
+include "../model/taikhoan.php";
+
 
 
 include "header.php";
-//controller
+//controller danh muc
 
 
 if (isset($_GET['act'])) {
@@ -164,11 +166,24 @@ $listsanpham  = loadall_sanpham($kyw, $iddm);
             include "home.php";
             break;
             
-        }
-    }else{
-        include "home.php";
+       case 'listtk':
+        $listtk = loadall_taikhoan();
+        include "taikhoan/list.php";
+        break;
 
-    }
+    case 'xoatk':
+        if(isset($_GET['id']) && ($_GET['id']>0)){
+            delete_taikhoan($_GET['id']);
+        }
+        $listtk = loadall_taikhoan();
+        include "taikhoan/list.php";
+        break;
+
+        include "home.php";
+        break;
+}
+}
+
 
         include "footer.php";
 ?>

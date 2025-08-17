@@ -77,3 +77,90 @@ if (is_file($hinhpath)) {
             </div>
         </div>
     </div>
+    <style>
+        /* Khung tổng */
+.frmcontent {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Tiêu đề */
+.frmtitle h1 {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 0 0 10px 0;
+    border-radius: 6px 6px 0 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Input + select + textarea */
+.frmcontent input[type="text"],
+.frmcontent input[type="file"],
+.frmcontent select,
+.frmcontent textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.frmcontent input[type="text"]:focus,
+.frmcontent select:focus,
+.frmcontent textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Nút bấm */
+.frmcontent input[type="submit"],
+.frmcontent input[type="reset"],
+.frmcontent input[type="button"] {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+    transition: background 0.3s;
+}
+
+.frmcontent input[type="reset"] {
+    background: #f39c12;
+}
+
+.frmcontent input[type="button"] {
+    background: #3498db;
+}
+
+.frmcontent input[type="submit"]:hover {
+    background: #43a047;
+}
+
+.frmcontent input[type="reset"]:hover {
+    background: #e67e22;
+}
+
+.frmcontent input[type="button"]:hover {
+    background: #2980b9;
+}
+
+/* Hình sản phẩm hiện tại */
+.frmcontent img {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+    </style>

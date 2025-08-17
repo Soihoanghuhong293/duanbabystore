@@ -68,3 +68,132 @@ foreach($listsanpham as $sanpham){
                 </div>
             </div>
         </div>
+
+        <style>
+            /* Khung tổng */
+.frmcontent {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 15px;
+    max-width: 1000px;
+    overflow-x: auto; /* scroll ngang nếu table quá rộng */
+}
+
+/* Tiêu đề */
+.frmtitle h1 {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 6px 6px 0 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Form tìm kiếm */
+.frmcontent form {
+    margin-bottom: 15px;
+}
+
+.frmcontent input[type="text"],
+.frmcontent select {
+    padding: 6px 10px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.frmcontent input[type="submit"] {
+    padding: 6px 12px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.frmcontent input[type="submit"]:hover {
+    background: #43a047;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background: #f2f2f2;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Button sửa/xóa */
+table input[type="button"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+table input[value="sửa"] {
+    background: #3498db;
+    color: #fff;
+}
+
+table input[value="sửa"]:hover {
+    background: #2980b9;
+}
+
+table input[value="xóa"] {
+    background: #e74c3c;
+    color: #fff;
+}
+
+table input[value="xóa"]:hover {
+    background: #c0392b;
+}
+
+/* Các nút bên dưới table */
+.frmcontent .row.mb10 input[type="button"] {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 6px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: #fff;
+}
+
+.frmcontent .row.mb10 input[type="button"]:hover {
+    background: #43a047;
+}
+
+.frmcontent .row.mb10 a input[type="button"] {
+    background: #3498db;
+}
+
+.frmcontent .row.mb10 a input[type="button"]:hover {
+    background: #2980b9;
+}
+
+        </style>
